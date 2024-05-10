@@ -1,4 +1,4 @@
-# React/DjangoRF Authentication App
+# React/DjangoRF Test Authentication App
 
 Authentication app using React and Django REST framework with session authentication.
 
