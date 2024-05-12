@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   db:
-    image: #postgres:14-alpine
+    image: postgres:12
     ports:
       - '5432:5432'
 
     environment:
-      - POSTGRES_PASSWORD= #password
-      - POSTGRES_USER= #postgres-user
-      - POSTGRES_DB= #project_48_test
+      - POSTGRES_PASSWORD= password
+      - POSTGRES_USER= postgres-user
+      - POSTGRES_DB= project_48_test
 
     volumes:
       - ./data/db:/var/lib/postgresql/data/
@@ -20,17 +20,17 @@ services:
     volumes:
       - frontend:/app/build
 
-  nginx:
-    build:
-      context: ./nginx
-    volumes:
-      - static:/static
-      - frontend:/var/www/frontend
-    ports:
-      - "80:80"
-    depends_on:
-      - backend
-      - frontend
+#  nginx:
+#    build:
+#      context: ./nginx
+#    volumes:
+#      - static:/static
+#      - frontend:/var/www/frontend
+#    ports:
+#      - "80:80"
+#    depends_on:
+#      - backend
+#      - frontend
 
 volumes:
   static:
