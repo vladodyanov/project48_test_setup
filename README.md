@@ -23,6 +23,7 @@ npm install react-bootstrap bootstrap
  - pip show django-cors-headers
  - pip show djangorestframework
  - pip show gunicorn
+   
 -> Update settings.py
  - update DB
  - update INSTALLED APPS = [
@@ -30,7 +31,8 @@ npm install react-bootstrap bootstrap
     'corsheaders',
     'backend.user_api.apps.UserApiConfig'
    ]
- - update MIDDLEWARE = [
+   
+ -> Update MIDDLEWARE = [
    'corsheaders.middleware.CorsMiddleware',
    ]
 -> CREATE APPS
