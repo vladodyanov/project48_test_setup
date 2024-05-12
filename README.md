@@ -16,7 +16,7 @@ pip install gunicorn
 npm install axios
 npm install react-bootstrap bootstrap
 ```
-## BACKEND
+## Backend
 -> Create requirements.txt
  - python -m django --version
  - pip show psycopg2-binary
