@@ -34,9 +34,12 @@ npm install react-bootstrap bootstrap
    
  -> Update MIDDLEWARE = [
    'corsheaders.middleware.CorsMiddleware',
-   ]
+   
+   
 -> CREATE APPS
+
 -> Create entrypoint.sh
+
 ## Create Dockerfile in ##FRONTEND AND ##BACKEND
 ## Create docker-compose.yaml in the main directory
 ## RUN in terminal
