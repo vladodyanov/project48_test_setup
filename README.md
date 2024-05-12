@@ -16,13 +16,14 @@ pip install gunicorn
 npm install axios
 npm install react-bootstrap bootstrap
 ```
-## BACKEND
+## Backend
 -> Create requirements.txt
  - python -m django --version
  - pip show psycopg2-binary
  - pip show django-cors-headers
  - pip show djangorestframework
  - pip show gunicorn
+   
 -> Update settings.py
  - update DB
  - update INSTALLED APPS = [
@@ -30,7 +31,8 @@ npm install react-bootstrap bootstrap
     'corsheaders',
     'backend.user_api.apps.UserApiConfig'
    ]
- - update MIDDLEWARE = [
+   
+ -> Update MIDDLEWARE = [
    'corsheaders.middleware.CorsMiddleware',
    ]
 -> CREATE APPS
